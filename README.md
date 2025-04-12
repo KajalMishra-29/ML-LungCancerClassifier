@@ -15,7 +15,7 @@ It contains labeled CT images across the three classes.
 ## 🔁 Project Pipeline
 - **Data Preprocessing**
   - image resizing and normalization
-  - Label encoding
+  - Label encoding : `1 Malignant` , `2 Benign`, `0 Normal` 
   - Dataset split : `70%` Training | `15%` Validation | `15%` Testing
 - **Model Architectures**
     - Custom `Concolutional Neural Network` (CNN)
