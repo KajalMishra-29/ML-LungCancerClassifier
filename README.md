@@ -41,7 +41,7 @@ The goal is early detection and diagnosis of lung cancer using deep learning mod
    - Optimizer: `Adam`
    - Callbacks: EarlyStopping, ReduceLROnPlateau
 - **Model Evaluation**
-    Accuracy & Loss plots (Training vs Validation)
+   - Accuracy & Loss plots (Training vs Validation)
    - Classification Report:
       - Accuracy, Precision, Recall, F1-Score
    - Confusion Matrix
