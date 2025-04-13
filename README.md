@@ -1,18 +1,21 @@
 # 🧠 ML-LungCancerClassifier
-This project aims to develop a machine learning model for the classification of lung cancer images into three categories: benign cases, malignant cases, and normal cases. Assist in early and accurate detection of lung cancer using deep learning.
+This project aims to develop a machine learning model for the classification of CT images into three categories: `benign`, `malignant`, and `normal` cases.This aids in the early detection and diagnosis of lung cancer using deep learning models.
 
-This project includes two model architectures:
-- Custom CNN Model: Lightweight convolutional architecture built from scratch for image classification.
-- ResNet-based Model: A deeper and more powerful feature extractor using ResNet50.Helps improve accuracy and generalization.
+# 🏗️ Model Architectures Used:
+1. Custom CNN Model
+   - Built from scratch.
+   - Lightweight and fast.
+   - Achieved 96.67% accuracy on test set.
+2. ResNet-based Model
+   - Transfer learning using pretrained ResNet50 (ImageNet weights).
+   - Fine-tuned on your dataset.
+   - Achieved  95.76% accuracy on the test set.
 
-Both models are evaluated on the same dataset using:
+# 📊 Dataset Details:          
+- Sourced from Kaggle: `IQ-OTH/NCCD Lung Cancer` Dataset          
+- 3-class classification: Malignant, Benign, Normal.             
 
-# 📂 Dataset
-Sourced from Kaggle: `IQ-OTH/NCCD Lung Cancer` Dataset
-It contains labeled CT images across the three classes.
-
-
-## 🔁 Project Pipeline
+# 🔁 Project Pipeline
 - **Data Preprocessing**
   - image resizing and normalization
   - Label encoding : `1 Malignant` , `2 Benign`, `0 Normal` 
@@ -22,7 +25,7 @@ It contains labeled CT images across the three classes.
     - `ResNet50` (pre-trained on ImageNet, fine-tuned on this dataset)
 - **Model Training**
     - Compiled with `categorical_crossentropy` loss and `Adam` optimizer
-    - Early stopping & ReduceLR
+    - Callbacks such as early stopping & ReduceLR
 - **Model Evaluation**
     - Accuracy & Loss Curves (train vs val)
     - Classification Report: Accuracy, Precision, Recall, F1-score
