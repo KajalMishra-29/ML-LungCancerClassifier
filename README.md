@@ -47,7 +47,22 @@ The goal is early detection and diagnosis of lung cancer using deep learning mod
    - Confusion Matrix
    - Multi-class ROC-AUC Curve
  
-  ![image](https://github.com/user-attachments/assets/ae4bb760-23fd-4780-9b41-a3b118e374eb)
+# 📈 Results Summary
+<table>
+   <tr>
+      <th>Model</th>
+      <th>Test Accuracy</th>
+   </tr>
+   <tr>
+      <td>Custom CNN</td>
+      <td>✅ 96.67%</td>
+      
+   </tr>
+   <tr>
+      <td>ResNet50</td>
+      <td>✅ 95.76%</td>
+   </tr>
+</table>
 
 # 💡 Future Enhancements
 - Grad-CAM visualization for interpretability
