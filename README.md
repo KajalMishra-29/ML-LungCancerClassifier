@@ -2,7 +2,7 @@
 This project aims to develop a deep learning-based classifier for lung CT images, categorizing them into three clinical labels:
 - `Benign`
 - `Malignant`
-- `Normal`
+- `Normal`               
 The goal is early detection and diagnosis of lung cancer using deep learning models.
 
 # 🏗️ Model Architectures Used:
