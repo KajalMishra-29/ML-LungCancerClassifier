@@ -3,9 +3,22 @@ This project aims to develop a machine learning model for the classification of 
 
 # 🏗️ Model Architectures Used:
 1. Custom CNN Model
-   - Built from scratch.
+   - Built from scratch with Tensorflow/Keras.
    - Lightweight and fast.
    - Achieved 96.67% accuracy on test set.
+   - ## Architectural Flow
+      - 2 Convolutional Layers each with:
+         - `64 filters`, `3x3` kernels
+         - Followed by **ReLU activation**
+         - Followed by 2x2 **MaxPooling** (downsampling feature maps)
+      - Flatten: Converts 2D feature maps into 1D
+      - Dense(16): Fully connected layer
+      - Dense(3) with Softmax: Output for 3-class classification
+      - ```
+         Conv2D → ReLU → MaxPooling ×2
+         Flatten → Dense(16)
+         Dense(3) → Softmax
+        ```
 2. ResNet-based Model
    - Transfer learning using pretrained ResNet50 (ImageNet weights).
    - Fine-tuned on your dataset.
